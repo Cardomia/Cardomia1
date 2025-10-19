@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - cardomia.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .contact-item-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+
+        .contact-item-text {
+            text-align: left;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .message {
+            text-align: center;
+            color: #666;
+            line-height: 1.8;
+            margin: 30px 0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+            display: block;
+            text-align: center;
+        }
+
+        .back-link:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-item-text {
+                text-align: center;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Contact Us</h1>
+            <p>Have questions or feedback? We'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-info">
+            <div class="contact-item">
+                <span class="contact-item-icon">📧</span>
+                <div class="contact-item-text">
+                    <a href="mailto:info@cardomia.com">info@cardomia.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="message">
+            <p>We're currently in development and working hard to bring you the best automotive community platform.</p>
+            <p>For all inquiries, including:</p>
+            <ul style="list-style: none; padding: 0; margin: 20px 0;">
+                <li>✓ General questions</li>
+                <li>✓ Partnership opportunities</li>
+                <li>✓ Privacy and data requests</li>
+                <li>✓ Feedback and suggestions</li>
+            </ul>
+            <p>Please email us at <strong>info@cardomia.com</strong></p>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #999;">We typically respond within 24-48 hours.</p>
+        </div>
+
+        <a href="/index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
