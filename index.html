@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Primary Meta Tags -->
+    
     <title>cardomia.com - The Pit Stop for Car Enthusiasts | Vote, Rate, DIY, Marketplace & Stories</title>
     <meta name="title" content="cardomia.com - The Pit Stop for Car Enthusiasts | Vote, Rate, DIY, Marketplace & Stories">
     <meta name="description" content="Join the ultimate automotive community! Vote for your favorite cars, rate your vehicle, share DIY repair solutions, buy & sell cars worldwide, find used parts, and share driver stories. Coming soon - your complete car enthusiast platform.">
@@ -22,7 +22,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
     <link rel="canonical" href="https://cardomia.com/">
     
-    <!-- Open Graph / Facebook -->
+    
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cardomia.com/">
     <meta property="og:title" content="cardomia.com - The Pit Stop for Car Enthusiasts">
@@ -31,14 +31,14 @@
     <meta property="og:site_name" content="cardomia.com">
     <meta property="og:locale" content="en_US">
     
-    <!-- Twitter -->
+    
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://cardomia.com/">
     <meta name="twitter:title" content="cardomia.com - The Pit Stop for Car Enthusiasts">
     <meta name="twitter:description" content="Vote, Rate, DIY, Marketplace, Used Parts & Driver Stories - All in one automotive platform">
     <meta name="twitter:image" content="https://cardomia.com/cardomia-logo.png">
     
-    <!-- International Hreflang Tags -->
+    
     <link rel="alternate" hreflang="en" href="https://cardomia.com/">
     <link rel="alternate" hreflang="en-US" href="https://cardomia.com/en-us">
     <link rel="alternate" hreflang="en-GB" href="https://cardomia.com/en-gb">
@@ -54,18 +54,18 @@
     <link rel="alternate" hreflang="zh" href="https://cardomia.com/zh">
     <link rel="alternate" hreflang="x-default" href="https://cardomia.com/">
     
-    <!-- Additional SEO Meta Tags -->
+    
     <meta name="language" content="English">
     <meta name="revisit-after" content="7 days">
     <meta name="copyright" content="© 2025 cardomia.com. All rights reserved.">
     <meta name="publisher" content="cardomia.com">
     <meta name="format-detection" content="telephone=no">
     
-    <!-- Preconnect for Performance -->
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Schema.org JSON-LD Structured Data -->
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -573,12 +573,11 @@
         </footer>
     </div>
 
-    <!-- Supabase Client -->
+    
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
     <script>
-        // Initialize Supabase client
-        // REPLACE THESE WITH YOUR ACTUAL SUPABASE CREDENTIALS
+     
         const SUPABASE_URL = 'https://xjrdqgtjhyectkbbgeak.supabase.co';
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhqcmRxZ3RqaHllY3RrYmJnZWFrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTcwMDQwOTYsImV4cCI6MjA3MjU4MDA5Nn0.H1U__AuR1ShgkwHvBowDzAHVX3FpNFtNb9AAimBBgCU';
         
@@ -594,15 +593,14 @@
             
             const email = emailInput.value.trim().toLowerCase();
             
-            // Disable button and show loading state
+          
             submitButton.disabled = true;
             submitButton.textContent = 'Subscribing...';
             
             try {
-                // Get user's IP and user agent for analytics (optional)
-                const userAgent = navigator.userAgent;
+               
                 
-                // Insert email into Supabase
+               
                 const { data, error } = await supabase
                     .from('email_subscribers')
                     .insert([
@@ -622,19 +620,19 @@
                     throw error;
                 }
 
-                // Success! Show message and clear form
+                
                 successMessage.textContent = '🎉 Thanks! You\'ll be among the first to know when we launch!';
                 successMessage.classList.add('show');
                 emailInput.value = '';
                 
-                // Also store in localStorage as backup
+                
                 let subscribers = JSON.parse(localStorage.getItem('cardomia_subscribers') || '[]');
                 if (!subscribers.includes(email)) {
                     subscribers.push(email);
                     localStorage.setItem('cardomia_subscribers', JSON.stringify(subscribers));
                 }
                 
-                // Hide message after 5 seconds
+                
                 setTimeout(() => {
                     successMessage.classList.remove('show');
                 }, 5000);
@@ -642,12 +640,12 @@
             } catch (error) {
                 console.error('Subscription error:', error);
                 
-                // Show error message
+                
                 successMessage.textContent = '⚠️ ' + (error.message || 'Oops! Something went wrong. Please try again.');
                 successMessage.style.background = 'rgba(239, 68, 68, 0.9)';
                 successMessage.classList.add('show');
                 
-                // Hide error message after 5 seconds and reset styling
+                
                 setTimeout(() => {
                     successMessage.classList.remove('show');
                     successMessage.style.background = 'rgba(34, 197, 94, 0.9)';
@@ -659,7 +657,7 @@
             }
         });
 
-        // Check if user has visited before (for future "Enter" button functionality)
+        
         const hasVisited = localStorage.getItem('cardomia_visited');
         if (!hasVisited) {
             localStorage.setItem('cardomia_visited', 'true');
