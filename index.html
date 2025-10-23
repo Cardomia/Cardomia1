@@ -201,7 +201,7 @@
             color: white;
             font-size: 2.5rem;
             font-weight: bold;
-            margin-bottom: 10px;
+            margin-bottom: 2px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
@@ -209,6 +209,15 @@
             color: rgba(255,255,255,0.95);
             font-size: 1.2rem;
             letter-spacing: 2px;
+        }
+
+        .header .tagline {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.9rem;
+            letter-spacing: 3px;
+            margin-top: -8px;
+            margin-bottom: 15px;
+            font-weight: 300;
         }
 
         .logo-section {
@@ -480,6 +489,7 @@
     <div class="container">
         <header class="header">
             <h1>cardomia.com</h1>
+            <p class="tagline">Connect • Share • Drive</p>
             <p>The Pit Stop for Car Enthusiasts</p>
         </header>
 
@@ -656,5 +666,44 @@
         }
     </script>
 </body>
+    <script>
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Disable common keyboard shortcuts for viewing source
+        document.addEventListener('keydown', function(e) {
+            // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, Ctrl+Shift+C
+            if (e.keyCode == 123 || // F12
+                (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
+                (e.ctrlKey && e.shiftKey && e.keyCode == 74) || // Ctrl+Shift+J
+                (e.ctrlKey && e.keyCode == 85) || // Ctrl+U
+                (e.ctrlKey && e.shiftKey && e.keyCode == 67)) { // Ctrl+Shift+C
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Disable text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Detect if DevTools is open
+        const devtools = /./;
+        devtools.toString = function() {
+            this.opened = true;
+        }
+        
+        setInterval(function() {
+            console.log(devtools);
+            if (devtools.opened) {
+                window.location.href = 'about:blank';
+            }
+        }, 1000);
+    </script>
 
 </html>
