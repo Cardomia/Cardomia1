@@ -210,11 +210,17 @@
             text-align: center;
             margin-bottom: 40px;
             animation: fadeInDown 1s ease;
+            display: inline-block;
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
             padding: 30px;
             border-radius: 15px;
             border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .header-wrapper {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         .header h1 {
@@ -259,11 +265,18 @@
             text-align: center;
             margin: 30px 0 40px;
             animation: fadeIn 1s ease 0.6s backwards;
+            display: inline-block;
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
             padding: 30px;
             border-radius: 15px;
             border: 1px solid rgba(255,255,255,0.2);
+            max-width: 700px;
+        }
+        
+        .coming-soon-wrapper {
+            text-align: center;
+            margin: 30px 0 40px;
         }
 
         .coming-soon h2 {
@@ -498,36 +511,40 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-            <h1>cardomia.com</h1>
-            <p class="tagline">Connect • Share • Drive</p>
-            <p>The Pit Stop for Car Enthusiasts</p>
-        </header>
+        <div class="header-wrapper">
+            <header class="header">
+                <h1>cardomia.com</h1>
+                <p class="tagline">Connect • Share • Drive</p>
+                <p>The Pit Stop for Car Enthusiasts</p>
+            </header>
+        </div>
 
         <section class="logo-section">
             <img src="cardomia-logo.PNG" alt="Cardomia Logo">
         </section>
 
-        <section class="coming-soon">
-            <h2>Coming Soon!</h2>
-            <p>Cardomia is bringing together drivers, tuners, and enthusiasts like never before. Subscribe now for insider updates, early launch access, and a chance to win exclusive car gear when we go live.</p>
-            
-            <form class="subscribe-form" id="subscribeForm" aria-label="Email subscription form">
-                <input 
-                    type="email" 
-                    id="emailInput" 
-                    placeholder="Enter your email address" 
-                    required
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                    aria-label="Email address"
-                >
-                <button type="submit" aria-label="Subscribe to launch notifications">Start Engine</button>
-            </form>
+        <div class="coming-soon-wrapper">
+            <section class="coming-soon">
+                <h2>Coming Soon!</h2>
+                <p>Cardomia is bringing together drivers, tuners, and enthusiasts like never before. Subscribe now for insider updates, early launch access, and a chance to win exclusive car gear when we go live.</p>
+                
+                <form class="subscribe-form" id="subscribeForm" aria-label="Email subscription form">
+                    <input 
+                        type="email" 
+                        id="emailInput" 
+                        placeholder="Enter your email address" 
+                        required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        aria-label="Email address"
+                    >
+                    <button type="submit" aria-label="Subscribe to launch notifications">Start Engine</button>
+                </form>
 
-            <div class="success-message" id="successMessage" role="alert" aria-live="polite">
-                🎉 Thanks! You'll be among the first to know when we launch!
-            </div>
-        </section>
+                <div class="success-message" id="successMessage" role="alert" aria-live="polite">
+                    🎉 Thanks! You'll be among the first to know when we launch!
+                </div>
+            </section>
+        </div>
 
         <main class="features-grid" role="main">
             <article class="feature-card">
