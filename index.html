@@ -679,21 +679,17 @@
                     throw error;
                 }
 
-                // Send welcome email via Edge Function
+                // Send welcome email
                 try {
-                    const { data: emailData, error: emailError } = await supabase.functions.invoke('send-confirmation-email', {
+                    await supabase.functions.invoke('send-confirmation-email', {
                         body: { email: email }
                     });
-
-                    if (emailError) {
-                        console.error('Email sending error:', emailError);
-                    }
                 } catch (emailErr) {
-                    console.error('Email function error:', emailErr);
+                    console.error('Email error:', emailErr);
                 }
 
                 
-                successMessage.textContent = '🎉 Thanks! Check your inbox for a welcome email!';
+                successMessage.textContent = '🎉 Thanks! You\'ll be among the first to know when we launch!';
                 successMessage.classList.add('show');
                 emailInput.value = '';
                 
