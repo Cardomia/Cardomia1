@@ -11,6 +11,7 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     
     <title>cardomia.com - The Pit Stop for Car Enthusiasts | Vote, Rate, DIY, Marketplace & Stories</title>
@@ -18,8 +19,15 @@
     <meta name="description" content="Join the ultimate automotive community! Vote for your favorite cars, rate your vehicle, share DIY repair solutions, buy & sell cars worldwide, find used parts, and share driver stories. Coming soon - your complete car enthusiast platform.">
     <meta name="keywords" content="car voting platform, car ratings, DIY car repair, car marketplace, used car parts, driver stories, automotive community, car enthusiasts, buy sell cars, car repair guides, vehicle reviews, car forum, automotive platform">
     <meta name="author" content="cardomia.com">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://cardomia.com/">
+    
+    <meta name="geo.region" content="WORLDWIDE">
+    <meta name="geo.placename" content="Global">
+    <meta name="distribution" content="global">
+    <meta name="target" content="all">
+    <meta name="audience" content="all">
+    <meta name="coverage" content="Worldwide">
     
     
     <meta property="og:type" content="website">
@@ -27,11 +35,15 @@
     <meta property="og:title" content="cardomia.com - The Pit Stop for Car Enthusiasts">
     <meta property="og:description" content="Vote for cars, rate your vehicle, share DIY solutions, buy & sell cars, find used parts, and share driver stories. The complete automotive community platform.">
     <meta property="og:image" content="https://cardomia.com/cardomia-logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="cardomia.com">
     <meta property="og:locale" content="en_US">
     
     
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@cardomiaX">
+    <meta name="twitter:creator" content="@cardomiaX">
     <meta name="twitter:url" content="https://cardomia.com/">
     <meta name="twitter:title" content="cardomia.com - The Pit Stop for Car Enthusiasts">
     <meta name="twitter:description" content="Vote, Rate, DIY, Marketplace, Used Parts & Driver Stories - All in one automotive platform">
@@ -59,10 +71,15 @@
     <meta name="copyright" content="© 2025 cardomia.com. All rights reserved.">
     <meta name="publisher" content="cardomia.com">
     <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
     
     <script type="application/ld+json">
@@ -90,9 +107,9 @@
         }
       },
       "sameAs": [
-        "https://facebook.com/cardomia",
-        "https://twitter.com/cardomia",
-        "https://instagram.com/cardomia"
+        "https://www.tiktok.com/@cardomia.com",
+        "https://twitter.com/cardomiaX",
+        "https://www.instagram.com/cardomiadotcom"
       ]
     }
     </script>
@@ -105,6 +122,11 @@
       "url": "https://cardomia.com",
       "logo": "https://cardomia.com/cardomia-logo.png",
       "description": "The Pit Stop for Car Enthusiasts - Vote, Rate, DIY, Marketplace, Used Parts & Stories",
+      "sameAs": [
+        "https://www.tiktok.com/@cardomia.com",
+        "https://twitter.com/cardomiaX",
+        "https://www.instagram.com/cardomiadotcom"
+      ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Support",
@@ -165,6 +187,19 @@
           "description": "Share and read automotive adventures and restoration journeys"
         }
       ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cardomia.com/"
+      }]
     }
     </script>
 
@@ -280,72 +315,70 @@
         }
 
         .coming-soon h2 {
-            color: white;
             font-size: 2rem;
-            margin-bottom: 12px;
+            margin-bottom: 15px;
+            color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .coming-soon p {
-            color: rgba(255,255,255,0.95);
             font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto 30px;
-            line-height: 1.6;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            line-height: 1.7;
+            margin-bottom: 25px;
+            color: rgba(255,255,255,0.95);
         }
 
         .subscribe-form {
             display: flex;
-            gap: 12px;
-            max-width: 500px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
         }
 
         .subscribe-form input {
             flex: 1;
-            min-width: 250px;
-            padding: 15px 20px;
-            border: 2px solid rgba(255,255,255,0.3);
+            padding: 12px 20px;
+            border: none;
             border-radius: 8px;
             font-size: 1rem;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255,255,255,0.9);
             transition: all 0.3s ease;
         }
 
         .subscribe-form input:focus {
             outline: none;
-            border-color: white;
-            box-shadow: 0 0 15px rgba(255,255,255,0.3);
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.3);
+            background: white;
         }
 
         .subscribe-form button {
-            padding: 15px 35px;
-            background: white;
-            color: #667eea;
+            padding: 12px 30px;
+            background: #ff6b6b;
+            color: white;
             border: none;
             border-radius: 8px;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            white-space: nowrap;
         }
 
         .subscribe-form button:hover {
+            background: #ff5252;
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+            box-shadow: 0 5px 15px rgba(255,107,107,0.4);
+        }
+
+        .subscribe-form button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
         }
 
         .success-message {
-            margin-top: 20px;
-            padding: 15px 25px;
-            background: rgba(34, 197, 94, 0.9);
+            background: rgba(34,197,94,0.9);
             color: white;
+            padding: 12px;
             border-radius: 8px;
-            font-weight: 500;
             display: none;
             animation: slideIn 0.3s ease;
         }
@@ -358,47 +391,52 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
-            margin-top: 50px;
-            animation: fadeIn 1s ease 0.8s backwards;
+            margin: 40px 0;
+            animation: fadeIn 1s ease 0.9s backwards;
         }
 
         .feature-card {
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(10px);
-            padding: 30px;
+            padding: 25px;
             border-radius: 15px;
             border: 1px solid rgba(255,255,255,0.2);
             transition: all 0.3s ease;
+            animation: fadeInUp 1s ease backwards;
         }
+
+        .feature-card:nth-child(1) { animation-delay: 1.2s; }
+        .feature-card:nth-child(2) { animation-delay: 1.3s; }
+        .feature-card:nth-child(3) { animation-delay: 1.4s; }
+        .feature-card:nth-child(4) { animation-delay: 1.5s; }
+        .feature-card:nth-child(5) { animation-delay: 1.6s; }
+        .feature-card:nth-child(6) { animation-delay: 1.7s; }
 
         .feature-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
             background: rgba(255,255,255,0.15);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.2);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
         }
 
         .feature-card h3 {
-            color: white;
             font-size: 1.5rem;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .feature-card p {
-            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
             line-height: 1.6;
+            color: rgba(255,255,255,0.9);
         }
 
         footer {
-            margin-top: 60px;
             text-align: center;
-            padding: 30px 20px;
+            margin-top: 50px;
+            padding-top: 30px;
             border-top: 1px solid rgba(255,255,255,0.2);
-            animation: fadeIn 1s ease 1s backwards;
+            animation: fadeIn 1s ease 1.8s backwards;
         }
 
         .footer-links {
@@ -412,6 +450,7 @@
         .footer-links a {
             color: rgba(255,255,255,0.9);
             text-decoration: none;
+            font-size: 0.9rem;
             transition: color 0.3s ease;
         }
 
@@ -420,9 +459,27 @@
             text-decoration: underline;
         }
 
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
         .copyright {
-            color: rgba(255,255,255,0.8);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
         }
 
         @keyframes fadeInDown {
@@ -437,11 +494,18 @@
         }
 
         @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInUp {
             from {
                 opacity: 0;
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
+                transform: translateY(0);
             }
         }
 
@@ -524,11 +588,6 @@
                 flex-direction: column;
             }
 
-            .subscribe-form input,
-            .subscribe-form button {
-                width: 100%;
-            }
-
             .features-grid {
                 grid-template-columns: 1fr;
             }
@@ -579,38 +638,32 @@
 
         <main class="features-grid" role="main">
             <article class="feature-card">
-                <div class="feature-icon" aria-hidden="true">🏆</div>
-                <h3>Vote for Cars</h3>
+                <h3>🏆 Vote for Cars</h3>
                 <p>Cast your vote for your favorite vehicles and discover what the automotive community loves. See trending cars, participate in passionate discussions, and influence the rankings of the world's best automobiles.</p>
             </article>
 
             <article class="feature-card">
-                <div class="feature-icon" aria-hidden="true">⭐</div>
-                <h3>Rate Your Car</h3>
+                <h3>⭐ Rate Your Car</h3>
                 <p>Share your real ownership experience by rating your vehicle. Help fellow enthusiasts make informed decisions with honest reviews, detailed ratings, and authentic feedback from actual car owners worldwide.</p>
             </article>
 
             <article class="feature-card">
-                <div class="feature-icon" aria-hidden="true">🔧</div>
-                <h3>DIY Solutions</h3>
+                <h3>🔧 DIY Solutions</h3>
                 <p>Access a comprehensive library of DIY repair guides and automotive solutions. Share your mechanical expertise or find step-by-step tutorials for your car maintenance and repair needs from experienced enthusiasts.</p>
             </article>
 
             <article class="feature-card">
-                <div class="feature-icon" aria-hidden="true">🚗</div>
-                <h3>Car Marketplace</h3>
+                <h3>🚗 Car Marketplace</h3>
                 <p>Buy and sell vehicles worldwide in our dedicated international marketplace. Connect directly with sellers, browse extensive listings from multiple countries, and find your dream car at competitive prices.</p>
             </article>
 
             <article class="feature-card">
-                <div class="feature-icon" aria-hidden="true">🔩</div>
-                <h3>Used Car Parts</h3>
+                <h3>🔩 Used Car Parts</h3>
                 <p>Find quality used car parts from trusted sellers across the globe. Save money on repairs and maintenance with our extensive parts marketplace featuring genuine OEM and aftermarket components.</p>
             </article>
 
             <article class="feature-card">
-                <div class="feature-icon" aria-hidden="true">📖</div>
-                <h3>Driver Stories</h3>
+                <h3>📖 Driver Stories</h3>
                 <p>Read and share incredible automotive adventures and experiences. From epic road trips to meticulous restoration projects, celebrate the passion, dedication, and joy that drives us all in this amazing automotive journey.</p>
             </article>
         </main>
@@ -621,6 +674,12 @@
                 <a href="/terms-of-service.html">Terms of Service</a>
                 <a href="/cookie-policy.html">Cookie Policy</a>
                 <a href="/contact.html">Contact Us</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@cardomia.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">🎵</a>
+                <a href="https://twitter.com/cardomiaX" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+                <a href="https://www.instagram.com/cardomiadotcom" target="_blank" rel="noopener noreferrer" aria-label="Instagram">📷</a>
             </div>
 
             <div class="copyright">
